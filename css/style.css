@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:100,200,300,400');
+
+/* reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section,
+input, textarea, select, button {
+	display: block;
+}
+
+:focus {
+	outline: 0;
+}
+
+body {
+	line-height: 1;
+    position: relative;
+    transition: all 0.5s ease 0.1s;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* clearfix */
+
+.clear:before, .clear:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+body {
+    background: #313;
+    background: linear-gradient(to top, rgba(25,5,25, 1), rgba(25,15,50, .9));
+    min-height: 100vh;
+    min-width: 300px;
+    font-family: "Exo 2", sans-serif;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+body {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}
+
+canvas {
+    position: absolute;
+    z-index: -1;
+}
+
+#wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}
+
+.width {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: flex;
+    flex: auto;
+}
+
+.btc, .eth {
+    display: inline-block;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.btc-caption, .eth-caption {
+    color: #bbb;
+}
+
+.btc-value, .eth-value {
+    padding-left: 5px;
+    color: #eee;
+}
+
+header {
+    padding-top:15px;
+}
+
+header .width {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: top;
+    align-items: center;
+}
+
+.logo img {
+    padding: 20px 0;
+}
+
+.link a {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #fff;
+    border: 1px solid #999;
+    padding: 10px 30px;
+    margin-left: 5px;
+}
+
+.link a:hover {
+    color: #333;
+    background: #fff;
+}
+
+.link a, .link a:hover {
+    transition: all 0.3s ease 0s;
+}
+
+main {
+    flex: auto;
+    display: -webkit-flex;
+    display: flex;
+    margin: 20px auto;
+}
+
+main .width {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.title {
+    font-size: 2.8rem;
+    font-weight: 100;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow:0 0 50px rgba(255,255,255, .3);
+}
+
+a.button {
+    margin: 0 auto;
+    padding: 25px 100px;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 1px;
+    border: 1px solid rgba(255,255,255, .5);
+    border-radius: 55px;
+}
+
+a.button:hover {
+    background: rgba(255,255,255, .7);
+    color:#000;
+}
+
+a.button, a.button:hover {
+    transition: all 0.3s ease 0s;
+}
+
+.control {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+    width: 100%;
+}
+
+.control .action {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 50px 10px;
+    width: 30%;
+    margin: 0 20px;
+    font-weight: 200;
+    border: 1px solid rgba(255,255,255, .5);
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.control .action:hover {
+    background: rgba(255,255,255, .9);
+    color: #323;
+}
+
+.control .action, .control .action:hover {
+    transition: all 0.3s ease 0s;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer .width {
+    padding:20px 50px;
+}
+
+.copyright {
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+@media all and (max-width: 1024px) {
+    header {
+        padding-top: 20px;
+    }
+    footer {
+        padding: 0;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .control .action {
+        font-size: 1.2rem;
+    }
+    .btc, .eth, .link a {
+        font-size: 0.9rem;
+    }
+}
+
+@media all and (max-width: 800px) {
+    main {
+        height: auto;
+        margin: 0 auto;
+    }
+    .btc, .eth {
+        display: block;
+        padding: 5px 10px;
+    }
+    a.button {
+        margin: 0 auto;
+    }
+    .control {
+        flex-direction: column;
+    }
+    .control .action{
+        width: 50%;
+        margin: 10px auto;
+        padding: 35px 10px;
+    }
+    footer {
+    margin-top: 0;
+}
+}
+
+@media all and (max-width: 680px) {
+    body {
+        overflow-x: hidden;
+    }
+    #wrapper {
+        overflow-y: visible;
+    }
+    header {
+        padding: 20px 0;
+    }
+    header .width {
+        flex-direction: column;
+    }
+    .logo img {
+        padding: 0;
+    }
+    .bitAPI {
+        margin: 0 auto;
+        display: block;
+        padding-bottom: 20px;
+    }
+    main {
+        height: auto;
+    }
+    .title {
+        text-align: center;
+    }
+    a.button {
+        padding: 15px 35px;
+        text-align: center;
+    }
+    .control .action {
+        padding: 20px;
+    }
+    .copyright {
+        font-size: 0.7rem;
+    }
+}
